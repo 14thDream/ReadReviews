@@ -10,7 +10,7 @@ namespace Managers.Services
         GuestReview? UpdateGuestReview(int id, GuestReview guestReview);
         bool DeleteGuestReview(int id);
 
-        IEnumerable<UserReview> GetUserReviews();
+        IEnumerable<UserReview> GetAllUserReviews();
         UserReview? GetUserReviewById(int id);
         void AddUserReview(UserReview userReview);
         UserReview? UpdateUserReview(int id, UserReview userReview);

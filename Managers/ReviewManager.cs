@@ -59,7 +59,7 @@ namespace Managers
             _context.SaveChanges();
         }
 
-        public UserReview? UpdateUserReviews(int id, UserReview review)
+        public UserReview? UpdateUserReview(int id, UserReview review)
         {
             var userReview = GetUserReviewById(id);
             if (userReview == null)
