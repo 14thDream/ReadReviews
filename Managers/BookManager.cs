@@ -38,7 +38,7 @@ namespace Managers
 
         public bool DeleteBook(int id)
         {
-            var book = _context.Books.Find(id);
+            var book = GetBookById(id);
             if (book == null)
             {
                 return false;

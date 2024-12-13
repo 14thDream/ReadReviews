@@ -38,7 +38,7 @@ namespace Managers
 
         public bool DeleteAccount(int id)
         {
-            var account = _context.Accounts.Find(id);
+            var account = GetAccountById(id);
             if (account == null)
             {
                 return false;

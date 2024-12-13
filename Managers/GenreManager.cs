@@ -38,7 +38,7 @@ namespace Managers
 
         public bool DeleteGenre(int id)
         {
-            var genre = _context.Genres.Find(id);
+            var genre = GetGenreById(id);
             if (genre == null)
             {
                 return false;
