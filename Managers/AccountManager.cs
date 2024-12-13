@@ -30,7 +30,10 @@ namespace Managers
                 return null;
             }
 
-            existingAccount = account;
+            existingAccount.Email = account.Email;
+            existingAccount.Username = account.Username;
+            existingAccount.Password = account.Password;
+            existingAccount.TypeOfAccount = account.TypeOfAccount;
             _context.SaveChanges();
 
             return existingAccount;

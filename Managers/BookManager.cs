@@ -30,7 +30,10 @@ namespace Managers
                 return null;
             }
 
-            existingBook = book;
+            existingBook.Title = book.Title;
+            existingBook.Author = book.Author;
+            existingBook.GenreId = book.GenreId;
+            existingBook.Summary = book.Summary;
             _context.SaveChanges();
 
             return existingBook;

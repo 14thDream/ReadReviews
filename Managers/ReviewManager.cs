@@ -33,7 +33,11 @@ namespace Managers
                 return null;
             }
 
-            guestReview = review;
+            guestReview.BookId = review.BookId;
+            guestReview.Rating = review.Rating;
+            guestReview.Content = review.Content;
+            guestReview.Name = review.Name;
+            
             _context.SaveChanges();
 
             return guestReview;
@@ -67,7 +71,11 @@ namespace Managers
                 return null;
             }
 
-            userReview = review;
+            userReview.BookId = review.BookId;
+            userReview.Rating = review.Rating;
+            userReview.Content = review.Content;
+            userReview.UserId = review.UserId;
+
             _context.SaveChanges();
 
             return userReview;

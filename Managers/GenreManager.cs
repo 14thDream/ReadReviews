@@ -30,7 +30,7 @@ namespace Managers
                 return null;
             }
 
-            existingGenre = genre;
+            existingGenre.Name = genre.Name;
             _context.SaveChanges();
 
             return existingGenre;
